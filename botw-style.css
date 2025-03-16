@@ -1,0 +1,757 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url(Capture\ d’écran\ 2025-03-06\ 160750.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #025811;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 2px solid #00806f;
+}
+
+.title {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.main-content {
+    background-color: #ffffff50;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.main-content h2, .main-content h3 {
+    color: #025811;
+}
+
+.main-content p {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.main-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.main-content ul li {
+    margin-bottom: 10px;
+}
+
+.vid {
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.goron-images {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.goron-images .img {
+    width: 300px; /* Réduit la largeur des images */
+    height: 400px; /* Réduit la hauteur des images */
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.prodiges {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.prodige {
+    width: 300px; /* Réduit la largeur des images */
+    height: 500px; /* Réduit la hauteur des images */
+    border-radius: 30%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 10px; /* Ajoute de l'espace entre les images */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.prodige:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.details {
+    margin: 20px 0;
+}
+
+.details summary {
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+    color: #025811;
+}
+
+.details p {
+    margin: 10px 0;
+}
+
+.details audio {
+    display: block;
+    margin: 10px 0;
+}
+
+.details img {
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.details img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.details div {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #025811;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 2px solid #00806f;
+    margin-top: auto;
+}
+
+.boutton {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.boutton button {
+    color: #fff;
+    background-color: rgb(5, 96, 172);
+    font-size: 20px;
+    font-family: 'Arial', sans-serif;
+    padding: 10px 20px;
+    margin: 10px;
+    border: 2px solid #00806f;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.boutton button:hover {
+    background-color: #00806f;
+    color: rgb(5, 96, 172);
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.solutions {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.solutions a {
+    text-decoration: none;
+}
+font
+.solutions button {
+    background-color: #00806f;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.solutions button:hover {
+    background-color: #025811;
+    color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.img_piaf {
+    width: 300px; /* Réduit la largeur des images */
+    height: 500px; /* Réduit la hauteur des images */
+    border-radius: 30%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 10px; /* Ajoute de l'espace entre les images */
+    transition: transform 0.3s, box-shadow 0.3s;
+
+     
+}
+.img_piaf:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.img_piaf{
+    width: 300px; /* Réduit la largeur des images */ 
+    height: 500px; /* Réduit la hauteur des images */
+    border-radius: 30%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 10px; /* Ajoute de l'espace entre les images */
+    transition: transform 0.3s, box-shadow 0.3s;
+   margin: 210px 200px ;
+}
+.img_z{
+    width: 300px; /* Réduit la largeur des images */
+    height: 500px; /* Réduit la hauteur des images */
+    border-radius: 30%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 10px; /* Ajoute de l'espace entre les images */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.img_z:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.img_z{
+    width: 300px; /* Réduit la largeur des images */ 
+    height: 500px; /* Réduit la hauteur des images */
+    border-radius: 30%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 5px; /* Ajoute de l'espace entre les images */
+    transition: transform 0.3s, box-shadow 0.3s;
+   margin: 100px 100px ;
+}
+.img_g{
+    width: 300px; /* Réduit la largeur des images */
+    height: 500px; /* Réduit la hauteur des images */
+    border-radius: 30%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 10px; /* Ajoute de l'espace entre les images */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.img_g:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.img_g{
+    width: 300px; /* Réduit la largeur des images */ 
+    height: 500px; /* Réduit la hauteur des images */
+    border-radius: 30%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 5px; /* Ajoute de l'espace entre les images */
+    transition: transform 0.3s, box-shadow 0.3s;
+   margin: 100px 100px ;
+}
+.paravoiles-images, .tenues-images {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.paravoiles-images .img, .tenues-images .img {
+    width: 150px; /* Ajustez la largeur des images */
+    height: 150px; /* Ajustez la hauteur des images */
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.paravoiles-images .img:hover, .tenues-images .img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.extra{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+
+}
+.extra .img{
+    width: 150px; /* Ajustez la largeur des images */
+    height: 150px; /* Ajustez la hauteur des images */
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.button-extra{
+    align-items: center;
+    
+    justify-content: center;    
+
+    background-color: #00806f;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+.button-extra:hover{
+    background-color: #025811;
+    color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.img-tenue{
+    width: 1100px; /* Réduit la largeur des images */
+    height: 300px; /* Réduit la hauteur des images */
+    border-radius: 30%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 10px; /* Ajoute de l'espace entre les images */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.img-tenue:hover {
+    transform: scale(2.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.img-paravoile{
+    width: 1100px; /* Réduit la largeur des images */
+    height: 300px; /* Réduit la hauteur des images */
+    border-radius: 30%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 10px; /* Ajoute de l'espace entre les images */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.img-paravoile:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.hylien-images {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.hylien-images .img {
+    width: 350px; /* Ajustez la largeur des images */
+    height: 650px; /* Ajustez la hauteur des images */
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.hylien-images .img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.monstre-images {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.monstre-images .img {
+    width: 450px; /* Ajustez la largeur des images */
+    height: 450px; /* Ajustez la hauteur des images */
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.monstre-images .img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.monstre-images {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.monstre-images .img {
+    width: 450px; /* Ajustez la largeur des images */
+    height: 450px; /* Ajustez la hauteur des images */
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.monstre-images .img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.monstre-images {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.title-h{
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+    color: #025811;
+    
+        background-color: #ffffff50;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+    
+}
+.title-h:hover{
+    background-color: #00806f;
+    color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.histoire{
+    color: #ffffff;
+    background-color: #074628a1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+}
+.menu {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.menu ul li {
+    display: inline;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #025811;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.menu ul li a:hover {
+    background-color: #00806f;
+    color: #fff;
+}
+.histoire :hover{
+    background-color: #00806f;
+    color: #020101;
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}   
+.peuple-images {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.peuple-images .img {
+    width: 150px; /* Ajustez la largeur des images */
+    height: 150px; /* Ajustez la hauteur des images */
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.peuple-images .img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.peuples-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.peuples-list li {
+    margin-bottom: 10px;
+}
+
+.peuples-list li a {
+    text-decoration: none;
+    color: #025811;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+.peuples-list li a:hover {
+    color: #00806f;
+}
+.peuple-images {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.peuple-images .img {
+    width: 150px; /* Ajustez la largeur des images */
+    height: 150px; /* Ajustez la hauteur des images */
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.peuple-images .img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.peuples-list, .monstres-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.peuples-list li, .monstres-list li {
+    margin-bottom: 10px;
+}
+
+.peuples-list li a, .monstres-list li a {
+    text-decoration: none;
+    color: #025811;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+.peuples-list li a:hover, .monstres-list li a:hover {
+    color: #00806f;
+}
+
+.monstre-images {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.monstre-images .img {
+    width: 250px; /* Ajustez la largeur des images */
+    height: 350px; /* Ajustez la hauteur des images */
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.monstre-images .img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.img-e{
+    
+    width: 400px; /* Réduit la largeur des images */
+    height: 500px; /* Réduit la hauteur des images */
+    border-radius: 30%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 10px; /* Ajoute de l'espace entre les images */
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin: 100px 100px ;
+}
+.img-e:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: #00806f;
+    color: #fff;
+    transform: scale(1.50);
+}
+.code-access {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.code-access form {
+    display: inline-block;
+}
+
+.code-access input[type="text"] {
+    padding: 5px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.code-access button {
+    padding: 5px 10px;
+    background-color: #025811;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.code-access button:hover {
+    background-color: #00806f;
+}
+.view-counter {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #025811;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1em;
+}
+.carousel {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-img {
+    min-width: 100%;
+    display: none;
+      
+    
+    object-fit: cover;
+
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
+}
+
+.carousel-button:hover {
+    
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    background-color: rgba(15, 214, 114, 0.8);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #025811;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #00806f;
+}
+#extraImage {
+    display: none;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#extraImage:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+#extraImage {
+    display: none;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#extraImage:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}

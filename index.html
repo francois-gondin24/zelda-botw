@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zelda: Breath of the Wild</title>
+    <link href="botw-style.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const savedFont = localStorage.getItem('font');
+            const savedFontSize = localStorage.getItem('fontSize');
+            if (savedFont) {
+                document.body.style.fontFamily = savedFont;
+            }
+            if (savedFontSize) {
+                document.body.style.fontSize = savedFontSize;
+            }
+
+            const imageVisible = localStorage.getItem('imageVisible') === 'true';
+            if (imageVisible) {
+                document.getElementById('extraImage').style.display = 'block';
+            } else {
+                document.getElementById('extraImage').style.display = 'none';
+            }
+
+            let views = localStorage.getItem('page_views');
+            if (views === null) {
+                views = 0;
+            }
+            views++;
+            localStorage.setItem('page_views', views);
+            document.getElementById('viewCounter').innerText = 'Vues : ' + views;
+        });
+
+        function handleImageClick() {
+            document.getElementById('extraImage').style.display = 'none';
+            window.location.href = 'https://francois-gondin24.github.io/zelda-totk/';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="title">Zelda: Breath of the Wild</h1>
+            <div class="view-counter" id="viewCounter">Vues : 0</div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="peuples.html">Peuples d'Hyrule</a></li>
+                    <li><a href="tenues/tenues.html">Tenues</a></li>
+                    <li><a href="solutions_boss.html">Solutions des Boss</a></li>
+                    <li><a href="solutions_donjons.html">Solutions des Donjons</a></li>
+                    <li><a href="paravoiles/paravoiles.html">Paravoiles</a></li>
+                    <li><a href="monstres/monstres.html">Monstres</a></li>
+                    <li><a href="carousel.html">Carrousel d'Images</a></li>
+                </ul>
+            </nav>
+            <div class="boutton">
+                <a href="https://francois-gondin24.github.io/page_de_presentation"><button>Retour à la page de présentation</button></a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="main-content">
+            <h2>Bienvenue sur le site de Zelda: Breath of the Wild</h2>
+            <p>Zelda: Breath of the Wild est un jeu vidéo d'action-aventure développé et publié par Nintendo pour la console Nintendo Switch. Il s'agit d'un jeu révolutionnaire dans la série The Legend of Zelda.</p>
+            <h3>Caractéristiques du jeu</h3>
+            <ul>
+                <li>Exploration d'un vaste monde ouvert</li>
+                <li>Graphismes époustouflants</li>
+                <li>Quêtes et énigmes captivantes</li>
+                <li>Combats dynamiques</li>
+            </ul>
+            <img id="extraImage" src="totk.gif" alt="Image supplémentaire" style="display:none; width:100%; max-width:600px; margin-top:20px;" onclick="handleImageClick();">
+        </div>
+    </div>
+    
+    <hr>
+    
+    <details class="container">
+        <summary><h2 class="title-h">L'histoire du jeu</h2></summary>
+        <p class="histoire">Dans The Legend of Zelda: Breath of the Wild, l'histoire commence après un long sommeil de 100 ans. Le héros, Link, se réveille dans un Hyrule dévasté, ravagé par la calamité de Ganon. Hyrule est désormais un monde ouvert où la destruction est omniprésente, et seul un faible souvenir subsiste du passé glorieux du royaume. La princesse Zelda, gardienne du pouvoir divin, est toujours prisonnière dans le Château d'Hyrule, où elle lutte pour maintenir le sceau qui retient Ganon.
+
+            L’objectif principal du jeu est de guider Link pour qu'il récupère ses souvenirs perdus et se prépare à affronter Ganon. Mais au-delà de cette quête principale, le joueur peut choisir de se concentrer sur l'exploration et la découverte des nombreux personnages, villages et secrets qui jalonnent le monde d'Hyrule. La progression du héros est étroitement liée à la récupération des quatre créatures divines (les "Divine Beasts"), qui peuvent être utilisées pour affaiblir Ganon.
+            
+            L’histoire de Breath of the Wild est marquée par la tragédie du passé d'Hyrule, mais aussi par l'espoir. Zelda, bien que prisonnière, garde l’espoir que Link pourra restaurer la paix. En chemin, Link rencontrera des alliés qui l'aideront dans sa mission, et chaque action qu'il entreprend dans le monde impactera directement son cheminement vers la confrontation finale contre Ganon.
+            
+            Les révélations du passé, les relations entre les personnages et les mystères du royaume de Hyrule sont dévoilés à travers les souvenirs que Link retrouve au fil de sa quête. Ces fragments du passé offrent un aperçu poignant de l'histoire de Zelda, des héros et des tragédies qui ont conduit à la situation actuelle du royaume. La fin de l’histoire, bien que centrée sur la bataille finale contre Ganon, laisse place à l'interprétation et aux conséquences de la reconstruction d'Hyrule.
+            
+            Ainsi, Breath of the Wild est bien plus qu'un simple jeu d'action; c’est une aventure où l’histoire et l'exploration se mêlent pour offrir une expérience inoubliable, pleine de découvertes, de rebondissements et de rédemption.</p>
+    </details>
+    <details class="container">
+        <summary><h2 class="title-h">Mécanique de jeu</h2></summary>
+        <p class="histoire">The Legend of Zelda: Breath of the Wild (BOTW) est un jeu d'action-aventure qui se distingue par son monde ouvert vaste et dynamique. Dès les premières minutes de jeu, il plonge les joueurs dans une exploration sans contraintes, où la liberté de mouvement et de décision est au cœur de l'expérience. Le jeu se déroule dans le royaume d'Hyrule, qui, après avoir été dévasté par la calamité de Ganon, est maintenant un vaste terrain de jeu où chaque recoin cache des secrets, des quêtes et des dangers.
+
+            Une des caractéristiques les plus marquantes de BOTW est son monde ouvert. Contrairement à d’autres jeux de la série Zelda, qui suivent un chemin linéaire, BOTW permet aux joueurs de choisir leur propre itinéraire pour atteindre les objectifs du jeu. L'exploration est encouragée, avec des environnements variés allant des montagnes enneigées aux vastes plaines, des forêts denses aux déserts brûlants. Les joueurs peuvent grimper presque toutes les surfaces, utiliser un parapente pour se déplacer dans les airs, et résoudre des énigmes environnementales qui s'intègrent parfaitement à l’écosystème du jeu.
+            
+            Le système de combat est également innovant. L'accent est mis sur la gestion de l'endurance, des armes et des boucliers, qui peuvent se casser après de multiples utilisations, incitant ainsi les joueurs à expérimenter avec différents types d'armement et de stratégies. La physique du jeu joue également un rôle crucial, permettant des interactions créatives avec l’environnement, comme l'utilisation des éléments naturels (le vent, la foudre, le feu) pour vaincre des ennemis.
+            
+            Enfin, le jeu propose une gestion de la survie avec un système de cuisine et de collecte, où Link peut préparer des plats et des potions pour améliorer ses capacités, régénérer de la santé ou se protéger des éléments. Cette attention aux détails dans la gestion des ressources et des capacités rend l'expérience immersive et stimulante.</p>
+    </details>
+    
+    <footer>
+        <p>© 2021 Nintendo. The Legend of Zelda.</p>
+        <h6>de Yoan Thevenin</h6>
+        <div class="code-access">
+            <form id="codeForm">
+                <label for="accessCode">Entrez le code :</label>
+                <input type="text" id="accessCode" name="accessCode">
+                <button type="button" onclick="checkCode()">Valider</button>
+            </form>
+        </div>
+    </footer>
+
+    <script>
+        function checkCode() {
+            const code = document.getElementById('accessCode').value;
+            if (code === 'yg') {
+                window.location.href = 'settings.html';
+            } else {
+                alert('Code incorrect. Veuillez réessayer.');
+            }
+        }
+
+        // Compteur de vues
+        document.addEventListener('DOMContentLoaded', (event) => {
+            let views = localStorage.getItem('page_views');
+            if (views === null) {
+                views = 0;
+            }
+            views++;
+            localStorage.setItem('page_views', views);
+            document.getElementById('viewCounter').innerText = 'Vues : ' + views;
+        });
+    </script>
+</body>
+</html>

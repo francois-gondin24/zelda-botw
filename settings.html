@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réglages</title>
+    <link href="botw-style.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="title">Réglages</h1>
+            <div class="boutton">
+                <a href="index.html"><button>Retour au site BOTW</button></a>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="main-content">
+            <h2>Personnaliser l'Apparence</h2>
+            <form id="settingsForm">
+                <div class="form-group">
+                    <label for="fontSelect">Choisir la police :</label>
+                    <select id="fontSelect" name="fontSelect">
+                        <option value="Arial">Arial</option>
+                        <option value="Verdana">Verdana</option>
+                        <option value="Times New Roman">Times New Roman</option>
+                        <option value="Courier New">Courier New</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="fontSizeSelect">Choisir la taille de la police :</label>
+                    <select id="fontSizeSelect" name="fontSizeSelect">
+                        <option value="16px">16px</option>
+                        <option value="18px">18px</option>
+                        <option value="20px">20px</option>
+                        <option value="22px">22px</option>
+                    </select>
+                </div>
+                <button type="button" onclick="applySettings()">Appliquer</button>
+            </form>
+            <button type="button" onclick="toggleImage()">Afficher/Cacher l'image</button>
+            <button type="button" onclick="resetViews()">Remettre les vues à zéro</button>
+        </div>
+    </div>
+    <footer>
+        <p>© 2021 Nintendo. The Legend of Zelda.</p>
+    </footer>
+
+    <script>
+        function applySettings() {
+            const font = document.getElementById('fontSelect').value;
+            const fontSize = document.getElementById('fontSizeSelect').value;
+            localStorage.setItem('font', font);
+            localStorage.setItem('fontSize', fontSize);
+            alert('Réglages appliqués. Veuillez actualiser la page principale.');
+        }
+
+        function toggleImage() {
+            const imageVisible = localStorage.getItem('imageVisible') === 'true';
+            localStorage.setItem('imageVisible', !imageVisible);
+            alert('Réglages appliqués. Veuillez actualiser la page principale.');
+        }
+
+        function resetViews() {
+            localStorage.setItem('page_views', 0);
+            alert('Le compteur de vues a été remis à zéro.');
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const savedFont = localStorage.getItem('font');
+            const savedFontSize = localStorage.getItem('fontSize');
+            if (savedFont) {
+                document.getElementById('fontSelect').value = savedFont;
+            }
+            if (savedFontSize) {
+                document.getElementById('fontSizeSelect').value = savedFontSize;
+            }
+        });
+    </script>
+</body>
+</html>

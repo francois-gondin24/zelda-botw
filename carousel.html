@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrousel d'Images</title>
+    <link href="botw-style.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="title">Carrousel d'Images</h1>
+            <div class="boutton">
+                <a href="index.html"><button>Retour au site Breath of the Wild</button></a>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="main-content">
+            <h2>Galerie d'Images</h2>
+            <div class="carousel">
+                <div class="carousel-images">
+                    <img class="carousel-img" src="zoras/mipha.jpg" alt="Image 1">
+                    <img class="carousel-img" src="gorons/daruk.jpg" alt="Image 2">
+                    <img class="carousel-img" src="piafs/revali.jpg" alt="Image 3">
+                    <img class="carousel-img" src="gerudos/urbosa.jpg" alt="Image 1">
+                    <img class="carousel-img" src="hyliens/Roi.jpg" alt="Image 2">
+                    <img class="carousel-img" src="hyliens/link.jpg" alt="Image 3">
+                    <img class="carousel-img" src="hyliens/Impa.jpg" alt="Image 2">
+                    <img class="carousel-img" src="hyliens/zelda.png" alt="Image 3">
+                </div>
+                <button class="carousel-button prev" onclick="prevImage()">&#10094;</button>
+                <button class="carousel-button next" onclick="nextImage()">&#10095;</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>© 2021 Nintendo. The Legend of Zelda.</p>
+    </footer>
+
+    <script>
+        let currentIndex = 0;
+        const images = document.querySelectorAll('.carousel-img');
+
+        function showImage(index) {
+            images.forEach((img, i) => {
+                img.style.display = i === index ? 'block' : 'none';
+            });
+        }
+
+        function prevImage() {
+            currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1;
+            showImage(currentIndex);
+        }
+
+        function nextImage() {
+            currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0;
+            showImage(currentIndex);
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            showImage(currentIndex);
+        });
+    </script>
+</body>
+</html>
